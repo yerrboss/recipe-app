@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe Finder</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+</head>
+<body>
+    <header>
+        <h1>Recipe Finder</h1>
+        <p>Find delicious recipes based on the ingredients you have</p>
+    </header>
+    <main>
+        <div class="search-container">
+            <input type="text" id="ingredientsInput" placeholder="Enter ingredients (e.g., eggs, milk, flour)">
+            <button onclick="findRecipes()">Search Recipes</button>
+        </div>
+        <div class="results-container hidden" id="resultsContainer">
+            <h2>Recipes:</h2>
+            <ul id="recipesList"></ul>
+        </div>
+    </main>
+    <section class="carousel-container">
+        <div class="owl-carousel owl-theme">
+            <div class="item"><img src="images/recipe1.jpg" alt=""></div>
+            <div class="item"><img src="images/recipe2.jpg" alt=""></div>
+            <div class="item"><img src="images/recipe3.jpg" alt=""></div>
+            <div class="item"><img src="images/recipe4.jpg" alt=""></div>
+            <div class="item"><img src="images/recipe5.jpg" alt=""></div>
+            <div class="item"><img src="images/recipe6.jpg" alt=""></div>
+        </div>
+    </section>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
